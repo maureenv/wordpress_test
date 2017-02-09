@@ -1,0 +1,11 @@
+/*
+  Theme Name: Simple
+  Author: Maureen
+  Author URI: http://maureenvogel.com
+  Version: 1.0
+  Description: To create a wptheme all you need is an index.php and style.css file.
+*/
+
+body {
+  background: black;
+}
