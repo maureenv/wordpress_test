@@ -13,3 +13,15 @@
             <span><?php bloginfo('description')?></span>
         </div>
     </header>
+
+    <nav class="main-nav">
+        <div class="container">
+        <?php
+            $args = array(
+                'theme_location' => 'primary'
+            ); // this specifies what menu we want to put here
+
+            wp_nav_menu($args); // built in wordpress function for menu
+        ?>
+        </div>
+    </nav>
