@@ -1,3 +1,4 @@
+<!-- single.php is default wordpress file name for a single post. You can copy over code from index.php and it will only show a single post -->
 <?php get_header(); ?> <!-- it's common practice to put header in external file -->
 <div class="main">
     <div class="container">
@@ -5,9 +6,7 @@
             <?php while(have_posts()): the_post(); ?> <!-- the_post looks kind of weird but you need to have this in wordpress when looping through posts -->
                 <article class="post">
                     <h3>
-                        <a href="<?php the_permalink(); ?>">
                             <?php the_title(); ?>
-                        </a>
                     </h3> <!-- this gets the title of the post -->
                     <div class="meta">
                         Created by <?php the_author(); ?> on <?php the_date(); ?> <!-- the date can be written in multiple variations just look at php date manual -->
@@ -17,12 +16,7 @@
                             <?php the_post_thumbnail(); ?>
                         </div>
                     <?php endif; ?>
-
-                    <?php the_excerpt(); ?> <!-- shortens the content on main page -->
-                    <br>
-                    <a class="button" href="<?php the_permalink(); ?>">
-                        Read More
-                    </a>
+                    <?php the_content(); ?>
                 </article>
             <?php endwhile; ?>
         <?php else : ?>
