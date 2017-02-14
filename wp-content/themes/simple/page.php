@@ -1,7 +1,7 @@
 <!-- page.php is for pages that don't have posts. Ex: About, Contact us page -->
 <?php get_header(); ?> <!-- it's common practice to put header in external file -->
-<div class="main">
-    <div class="container">
+<div class="container">
+    <div class="main">
         <?php if(have_posts()) : ?>
             <?php while(have_posts()): the_post(); ?> <!-- the_post looks kind of weird but you need to have this in wordpress when looping through posts -->
                 <article class="post">
@@ -24,5 +24,5 @@
 
         <!-- the above syntax can also be written as php if() {} ?> -->
     </div>
-</div>
+
 <?php get_footer(); ?>

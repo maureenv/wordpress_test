@@ -33,7 +33,9 @@ header h1 {
   padding: 0;
   padding-bottom: 10px;
 }
-
+.clr {
+    clear: both;
+}
 .container {
   width: 1020px;
   margin: 0 auto;
@@ -42,6 +44,14 @@ header h1 {
 
 .main {
   margin: 15px 0;
+  float: left;
+  width: 68%;
+
+}
+
+.sidebar {
+    float: right;
+    width: 28%;
 }
 
 footer {
@@ -72,6 +82,10 @@ article.post a.button {
     padding: 5px;
 }
 
+.meta a {
+    color: white;
+}
+
 .post-thumbnail img {
     width: 100%;
     height: auto;
@@ -81,6 +95,23 @@ article.post a.button {
     background: black;
     color: white;
     padding: 5px;
+}
+
+.side-widget {
+    border: 1px #ccc solid;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20x;
+}
+
+.side-widget li {
+    list-style: none;
+    line-height: 2.2em;
+    border-bottom: solid 1px #ccc;
+}
+
+.side-widget a {
+    text-decoration: none;
 }
 
 .main-nav ul {

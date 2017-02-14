@@ -18,3 +18,17 @@ function set_excerpt_length() {
 
 add_filter('excerpt_length', 'set_excerpt_length');
 // add_filter used to change something
+
+// widget Location
+function init_widgets($id) {
+    register_sidebar(array(
+        'name' => 'Sidebar',
+        'id' => 'sidebar', // id is usually named the same thing just with lower case. if it's more than one word use hyphens
+        'before_widget' => '<div class="side-widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+}
+
+add_action('widgets_init', 'init_widgets'); // the widgets_init function adds the Widgets functionality into themes
