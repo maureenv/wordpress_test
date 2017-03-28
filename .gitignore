@@ -23,6 +23,7 @@ wp-content/plugins/hello.php
 wp-content/plugins/index.php
 !wp-content/themes/
 !wp-content/themes/simple
+!wp-content/advanced-wp-html
 wp-content/themes/twenty*
 
 # Ignore everything in the "plugins" directory, except the plugins you
